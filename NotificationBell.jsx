@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Bell } from "lucide-react";
-import { connectSocket } from "./socketServer.js";
+import { connectSocket } from "./socketClient.js";
 import { useAuth } from "./AuthContext.jsx";
 
 export default function NotificationBell() {
