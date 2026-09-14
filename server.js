@@ -10,7 +10,7 @@ import { env } from "./env.js";
 import { connectDB } from "./db.js";
 import { notFound, errorHandler } from "./middleware.js";
 import routes from "./routes.js";
-import { initSocket } from "./socketServer.js";
+import { initSocket } from "./socketServer.js"; 
 
 // Crée dossier uploads si absent
 if (!fs.existsSync(env.uploadDir)) fs.mkdirSync(env.uploadDir, { recursive: true });
