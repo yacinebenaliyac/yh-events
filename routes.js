@@ -514,7 +514,6 @@ adminRouter.post("/categories", async (req, res) => res.status(201).json(await C
 adminRouter.put("/categories/:id", async (req, res) => res.json(await Category.findByIdAndUpdate(req.params.id, req.body, { new: true })));
 adminRouter.delete("/categories/:id", async (req, res) => { await Category.findByIdAndDelete(req.params.id); res.json({ ok: true }); });
 
-/* Admin — Promos */
 adminRouter.get("/promos", async (_req, res) => {
   res.json(await Promo.find().sort("-createdAt"));
 });
