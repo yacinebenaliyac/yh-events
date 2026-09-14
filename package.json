@@ -1,0 +1,47 @@
+{
+  "name": "yh-events",
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:api": "nodemon server.js",
+    "dev:web": "vite",
+    "start": "node server.js",
+    "build": "vite build",
+    "seed:admin": "node seedAdmin.js",
+    "seed:data": "node seedData.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "framer-motion": "^11.3.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.400.0",
+    "mongoose": "^8.5.0",
+    "morgan": "^10.1.0",
+    "multer": "^1.4.5-lts.1",
+    "pdfkit": "^0.15.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.24.0",
+    "slugify": "^1.6.6",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "stripe": "^16.2.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "nodemon": "^3.1.0",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.3.3",
+    "vite-plugin-pwa": "^0.20.0"
+  }
+}

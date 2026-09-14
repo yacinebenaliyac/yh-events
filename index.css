@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { background: #f7f4ec; font-family: 'Inter', system-ui, sans-serif; color: #1a301d; }
+h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; }
+
+.animated-bg {
+  position: fixed; inset: 0; z-index: -2;
+  background: linear-gradient(-45deg, #1a301d, #234027, #2d5232, #1a301d);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  opacity: 0.05;
+}
+.blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.35; pointer-events: none; }
+
+@keyframes gradientShift {
+  0%,100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
