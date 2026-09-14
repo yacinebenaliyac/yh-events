@@ -4,11 +4,12 @@
   "type": "module",
   "scripts": {
     "dev:api": "nodemon server.js",
-    "dev:web": "vite",
-    "start": "node server.js",
-    "build": "vite build",
-    "seed:admin": "node seedAdmin.js",
-    "seed:data": "node seedData.js"
+  "dev:web": "vite",
+  "start": "node server.js",
+  "build": "vite build",
+  "render-build": "npm install --include=dev && npm run build",
+  "seed:admin": "node seedAdmin.js",
+  "seed:data": "node seedData.js"
   },
   "dependencies": {
     "axios": "^1.7.2",
