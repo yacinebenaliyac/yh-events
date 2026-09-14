@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { MessageCircle, X, Send } from "lucide-react";
 import { api } from "./api.js";
-import { connectSocket } from "./socketServer.js";
+import { connectSocket } from "./socketClient.js";
 import { useAuth } from "./AuthContext.jsx";
 
 export default function ChatWidget() {
