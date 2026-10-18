@@ -35,10 +35,20 @@ export default defineConfig({
       },
     }),
   ],
+  preview: {
+    port: 5173,
+    strictPort: true,
+    allowedHosts: true,
+  },
   server: {
     port: 5173,
+    strictPort: true,
+    allowedHosts: true,
     proxy: {
-      "/api": "http://localhost:5000",
+      "^/api/": {
+        target: "http://localhost:5000",
+        changeOrigin: true,
+      },
       "/uploads": "http://localhost:5000",
       "/socket.io": { target: "http://localhost:5000", ws: true },
     },
